@@ -3,20 +3,59 @@
   <head>
     <meta charset="utf-8">
     <title>What is Sportsball?</title>
-  </head>
-  <body>
-    <h2>TEXT</h2>
-    <p><strong>Sportsball</strong> is the name of the game! People (usually men) run up and down a field and into each other. And they are paid millions upon millions of dollars to do this! What in the actual eff, it's crazy. In my next life I'm going to chase balls better than any other person.</p>
-    <blockquote><p><em><strong>But</strong> why? Some feel that it's a way to wage war against your neighbors without having to kill them that moment. That's what traumatic brain injuries are for, if interested.</em></p></blockquote>
-    <p><strong>Again</strong>, it's all just crazy to me.</p>
+    <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <style>
+    .formBox{
+      border: solid;
+      border-color: navy;
+      border-spacing: 4px;
+      border-radius: 5px;
+      border-width: medium;
+      font-family: Oxygen;
+    }
+    .headers {
+      background-color: navy;
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-family: Oxygen;
+    }
+    .listFormat{
+      border: solid;
+      border-color: navy;
+      border-width: medium;
+      font-family: Oxygen;
+    }
+    .regularText{
+      font-family: Oxygen;
+    }
+    .tableFormat{
+      border: solid;
+      border-width: thin;
+      font-family: Oxygen;
+      text-align: right;
+    }
+    .tableTitle{
+      text-align: justify;
+    }
 
-    <h2>Table</h2>
-    <table>
+  </style>
+  </head>
+    <body> <div class="regularText">
+      <h2 class="headers">TEXT</h2>
+      <p><strong>Sportsball</strong> is the name of the game! People run up and down a field in order to move a ball between two distinct zones, until they swap sides and score in the area that was previously coveted by the other team. And they are paid millions upon millions of dollars to do this! In my next life, I'll chase balls better than any other person on my path to enlightenment.</p>
+      <blockquote><p><em><strong>But</strong> why? Some feel that it's a way to wage war against your neighbors without having to cause any immediate lethal damage. That unseemly aspect is handled several decades down the road by brain injuries.</em></p></blockquote>
+      <p><strong>It's</strong> all just crazy to me.</p>
+    </div>
+
+    <h2 class="headers">TABLE</h2>
+    <table class="tableFormat">
     <thead>
       <tr>
         <th rowspan="2">Team Name</th>
-        <th colspan="2">First Half</th>
-        <th colspan="2">Second Half</th>
+        <th colspan="2" class="tableTitle">First Half</th>
+        <th colspan="2" class="tableTitle">Second Half</th>
 
       </tr>
       <tr>
@@ -57,8 +96,9 @@
       </tfoot>
     </table>
 
-    <h2>LIST</h2>
-    <ul>
+    <h2 class="headers">LIST</h2>
+
+    <ul class="listFormat">
       <a href="http://www.denverbroncos.com/" target="_blank"><img src="http://www.nflview.com/nfl_wallpaper/denver_broncos_horse_logo_1920x1080_168_hd.jpg" height="150px;"></a>
       <li>Coach: Vance Joseph</li>
       <li>QBs</li>
@@ -67,8 +107,8 @@
         <li>Chad Kelley</li>
         <li>Paxton Lynch</li>
       </ol>
-    </ul><br><br>
-    <ul>
+    </ul>
+    <ul class="listFormat">
       <a href="https://www.patriots.com/" target="_blank"><img src="https://i.pinimg.com/originals/3b/ed/c7/3bedc7173cffd2c351795bbe211708f4.jpg" height="150px;"></a>
       <li>Coach: Bill Belichick</li>
       <li>QBs:</li>
@@ -78,8 +118,13 @@
         <li>Brian Hoyer</li>
       </ol>
     </ul>
-    <h2>FORM</h2>
-    <form>
+
+    <!-- section for the form -->
+
+    <h2 class="headers">FORM</h2>
+    <div class="formBox" class="regularText">
+
+    <form><br>
       First Name:
       <input type="text">
       Last Name:
@@ -94,12 +139,12 @@
       </select>
 
       <br><br>
-      I have:
-      <input type="radio"> Played
-      <input type="radio"> Prayed
-      <input type="radio"> Watched
-      <input type="radio"> Bet upon
-      <input type="radio"> Been traumatically injured by<br>
+      I have:<br>
+      <input type="radio"> played
+      <input type="radio"> prayed over
+      <input type="radio"> watched
+      <input type="radio"> bet upon
+      <input type="radio"> been traumatically injured by<br>
       this sport.
       <br><br>
 
@@ -109,7 +154,9 @@
       <input type="radio"> Professional
       <input type="radio"> How did they DO that?!<br><br>
       <input type="submit">
+      <br>
     </form>
+  </div>
 
   </body>
 </html>
